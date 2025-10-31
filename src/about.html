@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Blog</title>
+    <meta name="description" content="A simple blog using Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+
+</head>
+
+ <style>  
+
+    body {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    main {
+      position: relative;
+      min-height: 100vh;
+      background-color: rgb(96, 108, 56);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 65px;
+      color: white ;
+      margin: 0;
+      padding-bottom: 40px;
+
+    }
+
+    .about-container {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 900px;
+    }
+    
+    .about-text h2 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    .about-text p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .about-img {
+      border-radius: 15px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .skills-container img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    transition: transform 0.3s;
+    }
+
+    .skills-container img:hover {
+    transform: scale(1.2);
+    }
+
+    footer {
+        background-color: rgb(40, 54, 24);
+    }
+
+    .mi-navbar {
+    background-color: rgb(40, 54, 24);
+    }
+   
+
+
+    .video-box {
+    width: 350px;
+    }
+
+    .embed-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+
+     .dropdown-menu {
+      background-color: rgb(40, 54, 24); 
+      border: none;
+    }
+
+ 
+    .dropdown-item {
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      background-color: rgb(96, 108, 56);
+      color: white;
+    }
+
+
+
+ </style>   
+
+<body>
+    <!-- incio -->
+ <nav class="navbar navbar-expand-lg navbar-dark mi-navbar" >
+
+    <div class="container">
+        <a class="navbar-brand text-white"  href="index.html">Mi Portafolio</a>
+        <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">Acerca de mi</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contactos
+        </a> 
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="https://www.linkedin.com/in/juan-david-garcia-vargas-2750671a3/" target="_blank">LinkedIn</a>
+            <a class="dropdown-item" href="https://github.com/jdavicod" target="_blank">GitHub</a>
+            <a class="dropdown-item" href="https://www.instagram.com/j_davidgv/" target="_blank">Instagram</a>
+        </div>
+
+
+        </ul>
+    </div>
+ </nav>
+
+    <main>
+        <!-- Primer contenedor: información personal -->
+        <div class="container about-container">
+            <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="multimedia/foto_cuatro_juan.jpg" alt="Foto Juan" class="about-img img-fluid">
+            </div>
+            <div class="col-md-7 about-text text-md-left text-center mt-4 mt-md-0">
+                <h2>Sobre mí</h2>
+                <p>
+                ¡Hola! Soy <strong>Juan David García Vargas</strong>, un apasionado por la tecnología y el desarrollo web.
+                Me gusta aprender constantemente nuevas herramientas para crear soluciones innovadoras que hagan más fácil la vida de las personas.
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Sección de videos-->
+
+        <div class="container text-center mt-5 mb-5">
+            <h3 class="mb-4">Proyectos y demostraciones</h3>
+             
+            <div class="d-flex justify-content-center flex-wrap">
+                              
+
+                <div class="video-box mx-3 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/hrxjBqZWsb0"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                        <p class="mt-2 text-light">Curso de CSS</p>
+                </div>
+
+                    <div class="video-box mx-3 mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/3nYLTiY5skU"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-2 text-light">Curso de HTML</p>
+                    </div>
+
+                    <div class="video-box mx-3 mb-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/PSwlAuRbv_A"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-2 text-light">Flexbox</p>
+                    </div>
+                </div>
+
+           </div>
+            
+        </div>
+
+        <!-- Sección de habilidades-->
+        <div class="container skills-container text-center mt-5 mb-5">
+            <h3 class="mb-4">Lenguajes y herramientas</h3>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="60" title="HTML5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="60" title="CSS3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" title="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="60" title="C#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="60" title="MySQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="60" title="Bootstrap">
+
+            </div>
+        </div>
+
+
+    </main>
+    
+    <!-- Footer -->
+     <footer>
+        <div class="text-white text-center py-3 ">
+        &copy; 2025 Juan David Garcia Vargas. Todos los derechos reservados.   
+        </div>    
+     </footer>
+
+     
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" async defer></script>
+   <script src="js/main.js" async defer></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async defer></script>
+
+</body>
+</html>
